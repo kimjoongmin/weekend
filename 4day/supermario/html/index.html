@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SUPERMARIO</title>
+    <!-- <link rel="shortcut icon" href="../images/layout/favicon.png" type="image/x-icon" /> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/swiper-bundle.css" />
+    <link rel="stylesheet" href="../css/splitting.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/gsap/gsap.min.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/splitting.min.js"></script>
+    <script src="../js/main.js" defer></script>
+  </head>
+  <body>
+	  <!-- 대체텍스트 테스트 -->
+	<!-- <div class="cardList thumb">
+	<ul>
+	<li>
+	<a href="https://nec.go.kr/site/nec/ex/bbs/View.do?cbIdx=1147&amp;bcIdx=160272" class="btn_bbsDetail" target="_blank" title="새창" data-info1="160276" data-info2="1257" sub_link_cont_yn='Y'>
+	<span class="img">
+	<img src="https://img.nec.go.kr/upload/board/1257/202202//51707bde-22d4-46d5-bc0c-b1bcc178b482.png" alt="사실은 이렇습니다 9편 - 관외사전투표(회송용봉투), 사전투표통신망, 임시사무소 팩트체크" width="296" height="237" />
+	</span>
+	<div>
+	<span class="title">사실은 이렇습니다 9편</span>
+	<span class="date">
+	2022-02-12
+	</span>
+	</div>
+	</a>
+	</li>
+	<li>
+	<a href="https://youtu.be/t7OWgz4H25A" class="btn_bbsDetail" target="_blank" title="새창" data-info1="160076" data-info2="1257" sub_link_cont_yn='Y'>
+	<span class="img">
+	<img src="https://img.nec.go.kr/upload/board/1257/202202//1e58683b-8f19-40b4-b7c3-1e1056b80548.png" alt="기자들이 팩트체크 하는 사전투표오해와 진실" width="296" height="237" /> 
+	</span>
+	<div>
+	<span class="title">[제20대 대선] 기자들이 '팩트체크'하는 사전투표 오해와 진실</span>
+	<span class="date">
+	2022-02-11
+	</span>
+	</div>
+	</a>
+	</li>
+	<li>
+	<a href="https://nec.go.kr/site/nec/ex/bbs/View.do?cbIdx=1147&amp;bcIdx=160271" class="btn_bbsDetail" target="_blank" title="새창" data-info1="160275" data-info2="1257" sub_link_cont_yn='Y'>
+	<span class="img">
+	<img src="https://img.nec.go.kr/upload/board/1257/202202//800a8990-833f-4285-8b64-2bf49a2a573c.png" alt="사실은 이렇습니다 8편 - ②개표에 대한 팩트체크 " width="296" height="237" />
+	</span>
+	<div>
+	<span class="title">사실은 이렇습니다 8편</span>
+	<span class="date">
+	2022-02-08
+	</span>
+	</div>
+	</a>
+	</li>
+	<li>
+	<a href="https://nec.go.kr/site/nec/ex/bbs/View.do?cbIdx=1147&amp;bcIdx=160269" class="btn_bbsDetail" target="_blank" title="새창" data-info1="160274" data-info2="1257" sub_link_cont_yn='Y'>
+	<span class="img">
+	<img src="https://img.nec.go.kr/upload/board/1257/202202//ee9fa1b8-8a8a-4866-9c98-4359358e4d4f.png" alt="사실은 이렇습니다 7편 - ①개표에 대한 팩트체크 " width="296" height="237" /> 
+	</span>
+	<div>
+	<span class="title">사실은 이렇습니다 7편</span>
+	<span class="date">
+	2022-02-04
+	</span>
+	</div>
+	</a>
+	</li>
+	</ul>
+	</div> -->
+    <header id="header">
+      <h1 id="logo">
+        <a href="">
+          <img src="../images/logo.png" alt="" />
+        </a>
+      </h1>
+      <nav id="gnb">
+        <h2 class="hidden">global navigation</h2>
+        <ul class="list">
+          <li class="on" data-url="mario">SUPER MARIO</li>
+          <li data-url="monster">MONSTER</li>
+          <!-- <li data-url="all">ALL</li> -->
+        </ul>
+      </nav>
+    </header>
+    <nav id="menu">
+      <h2 class="hidden">global navigation</h2>
+      <ul class="list">
+        <!-- <li>FLYING MARIO</li>
+            <li>CAT MARIO</li>
+            <li>FIREBALL MARIO</li>
+            <li>RUNNING MARIO</li>
+            <li>RACOON MARIO</li> -->
+      </ul>
+    </nav>
+    <div id="main">
+      <div class="mask">
+        <ul class="marioList swiper-wrapper"></ul>
+      </div>
+    </div>
+    <footer id="footer">
+      <p>ALL COPYRIGHT RESERVED BY JJANG051'S MEDIA LAB</p>
+    </footer>
+  </body>
+</html>

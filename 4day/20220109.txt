@@ -1,0 +1,78 @@
+*ajax 호출
+사진 및 리스트 자료들이 많이 변할 것 같다 싶으면 ajax로 json파일에 담아 호출!
+
+parsing 한다~
+json ===== html 로 할수 있게끔
+ajax asynchronous javascript and xml
+library
+1.fetch
+2.jquery
+3.axios (프론에서 자리잡고 있음 vue react 에서 거의 표준)
+
+https://api.jquery.com/jQuery.ajax/
+
+
+json 으로 파싱할때 크롬웹스토어 cors  추가해야함
+access control allow origin
+
+서버할때 필수 프로그램
+https://www.postman.com/
+
+http method -  post / get / put / delete =>>>>>>>>>>>> CRUD
+
+postman에서 워크 스페이스 에서 하나 만들어서
+데이터 주소 입력하고
+_type 추가하고 json 하고 주소 뒤에 더 붙음 센드 누르면
+json 파일로 떨어짐
+
+
+https://developers.kakao.com/docs/latest/ko/daum-search/dev-guide
+이미지 검색 테스트
+
+포스트맨에
+
+request
+GET /v2/search/image HTTP/1.1
+Host: dapi.kakao.com
+
+https://dapi.kakao.com/v2/search/image?query=장원영  send
+
+Authorization: KakaoAK {REST_API_KEY}
+
+headers 에 key = Authorization 다음
+value 에 KakaoAK {REST_API_KEY}
+ex) KakaoAK adf0bacd9c720dae791833a55058f6da (카카오 개발자에 REST API 키 있음!)
+
+params 에 key = query  다음
+value 검색어 ex)장원영
+
+
+corona ajax
+1.d3 chart = 어려움 젤많음
+2.https://www.chartjs.org/ = 쉬움
+3.https://ui.toast.com/tui-chart = 우리나라 간단
+4.https://www.highcharts.com/ = 유료
+
+
+
+
+*달력(반복문) continue , break
+
+https://wakirin.github.io/Lightpick/
+
+4년마다 윤년
+100으로 떨어지면 윤년아님
+400으로 떨어지면 또 윤년
+
+github.com/jjang051/portfolio
+
+
+https://www.themoviedb.org/
+tmdb
+https://developers.themoviedb.org/3/getting-started/introduction
+
+
+
+*카카오 검색
+
+https://fancyapps.com/

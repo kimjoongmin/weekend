@@ -1,0 +1,97 @@
+@import "vars";
+
+#main {
+  .mask {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+.section {
+  .inner {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    .img {
+      padding-right: 100px;
+      img {
+        height: 800px;
+        object-fit: contain;
+      }
+    }
+    .info {
+      @include absCenter(v);
+      left: 100px;
+      color: #fff;
+      .category {
+        font-size: 1.4rem;
+        font-weight: 500;
+      }
+      .title {
+        font-size: 4.2rem;
+        font-weight: 700;
+        margin-bottom: 30px;
+        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+      }
+      .depth {
+        display: inline-block;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #f00;
+        margin-bottom: 80px;
+      }
+      .price {
+        font-size: 24px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+#bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+#indicator {
+  position: fixed;
+  bottom: 50px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  z-index: 3;
+  .pagination {
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+    transform: inherit;
+    .swiper-pagination-bullet {
+      opacity: 1;
+      width: 15px;
+      height: 15px;
+      margin: 0 2px;
+      border-radius: 100px;
+      background: transparent;
+      border: 2px solid #fff;
+      transition: all 0.5s;
+      &-active {
+        background: #fff;
+      }
+    }
+  }
+  .num {
+    padding: 15px 30px;
+    background-color: rgb(167, 10, 10);
+    border-radius: 100px;
+    overflow: hidden;
+    @include longShadow(darken(rgb(167, 10, 10), 10), right, 30);
+  }
+}

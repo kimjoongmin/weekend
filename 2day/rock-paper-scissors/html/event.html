@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background:red;
+            width:100px;
+            height:100px;
+            margin-bottom:5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box01" data-id="0" data-color="red"><span>red</span></div>
+    <div class="box" id="box02" data-id="1" data-color="blue"><span>blue</span></div>
+    <div class="box" id="box03" data-id="2" data-color="green"><span>green</span></div>
+    <button class="stop">stop</button>
+    <button class="start">start</button>
+    <script>
+        const box = document.querySelectorAll(".box");
+        const stop = document.querySelector(".stop");
+        const start = document.querySelector(".start");
+        function clickBox(e){
+            console.log(e.currentTarget);//내가 클릭한애를 알 수 있다
+            console.log(e.target);//내가 클릭한애를 알 수 있다(이벤트버블링)
+            console.log(e.currentTarget.dataset.id + "박스를 클릭했습니다.");
+            e.currentTarget.style.backgroundColor = e.currentTarget.dataset.color
+        }
+        box.forEach(function(item,i){
+            item.addEventListener("click",clickBox);
+        });
+        stop.addEventListener("click",function(){
+            //box.removeEventListener("click", clickBox);
+            box.forEach(function(item,i){
+                item.removeEventListener("click",clickBox);
+            });
+        });
+        start.addEventListener("click",function(){
+            //box.addEventListener("click", clickBox);
+            box.forEach(function(item,i){
+                item.addEventListener("click",clickBox);
+            });
+        });
+    </script>
+</body>
+</html>

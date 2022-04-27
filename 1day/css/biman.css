@@ -1,0 +1,35 @@
+body { padding: 0; margin: 0; }
+
+.img { width: 500px; margin: 0 auto; }
+
+.img img { max-width: 100%; border-radius: 5px; }
+
+h2 { text-align: center; }
+
+button { cursor: pointer; }
+
+.biman { width: 500px; margin: 20px auto; padding: 20px; border: 1px solid #ddd; border-radius: 5px; background: #f2f2f2; color: #555; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.biman label { display: block; margin: 0 0 10px 0; cursor: pointer; }
+
+.biman label span { display: inline-block; width: 70px; text-align: right; padding-right: 10px; -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 14px; }
+
+.biman label input { display: inline-block; width: calc(100% - 70px); border: 1px solid #ddd; line-height: 40px; -webkit-box-sizing: border-box; box-sizing: border-box; padding-left: 5px; }
+
+.biman button { display: block; border: 0; background: #336699; color: #fff; width: 100%; line-height: 40px; border-radius: 3px; font-weight: bold; font-size: 15px; }
+
+.biman #txtResult { display: none; margin-top: 20px; padding: 20px; border-radius: 5px; text-align: center; color: #fff; }
+
+.biman #txtResult span { display: block; line-height: 30px; }
+
+.biman .blue { background: blue; }
+
+.biman .green { background: green; }
+
+.biman .yellow { background: yellowgreen; }
+
+.biman .orange { background: orange; }
+
+.biman .red { background: red; }
+
+.biman #btnReset { background: #555; margin-top: 20px; }

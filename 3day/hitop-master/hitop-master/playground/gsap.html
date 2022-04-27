@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <script src="../js/gsap/gsap.min.js"></script>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+      #red {
+        background: red;
+      }
+      #green {
+        background: green;
+      }
+      #blue {
+        background: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" id="red">RED</div>
+    <div class="box" id="green">GREEN</div>
+    <div class="box" id="blue">BLUE</div>
+    <script>
+      gsap.to(".box", {
+        x: 500,
+        //marginLeft: 500,
+        //y: 100,
+        backgroundColor: "black",
+        ease: "elastic",
+        duration: 1.5,
+        delay: 0.5,
+        stagger: 0.1, //시차를 두고 움직이게 한다 아래처럼 다 써줄 필요 없음.
+      });
+      // gsap.to("#green", {
+      //   marginLeft: 500,
+      //   backgroundColor: "black",
+      //   ease: "elastic",
+      //   duration: 1.5,
+      //   delay: 1,
+      // });
+      // gsap.to("#blue", {
+      //   marginLeft: 500,
+      //   backgroundColor: "black",
+      //   ease: "elastic",
+      //   duration: 1.5,
+      //   delay: 1.5,
+      // });
+
+      //const txt = "a/b/c/d/e/f/g"; //
+      //const arr = txt.split("/"); // split 찢다  특정한 글자를 기준으로 찢는다~
+      const txt = "abcdefg"; //
+      const arr = txt.split(""); // split 찢다  특정한 글자를 기준으로 찢어서 배열로 만들어 준다.
+      console.log("🚀 ~ file: gsap.html ~ line 62 ~ arr", arr)
+    </script>
+  </body>
+</html>

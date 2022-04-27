@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/plugin.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/plugin.js"></script>
+    <script src="../js/anime.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/main.js"></script>
+  </head>
+  <body>
+    <asdie id="modal" class="modalWrap" style="display: none">
+      <div class="modalTitle"></div>
+      <div class="modalCon">
+        <img src="../images/main/popup.png" alt="" />
+      </div>
+      <div class="modalBtn"></div>
+    </asdie>
+    <div id="skipNav">
+      <a href="#gnb">주메뉴 바로가기</a>
+      <a href="#container">본문 바로가기</a>
+    </div>
+    <div id="wrap">
+      <header>
+        <div class="header">
+          <h1>
+            <a href=""><img src="../images/layout/logo.png" alt="HITOP" /></a>
+          </h1>
+          <div id="gnb">
+            <ul>
+              <li>
+                <a href="">Company</a>
+                <ul class="depth02">
+                  <li><a href="">사업개요</a></li>
+                  <li><a href="">인사말</a></li>
+                  <li><a href="">경영이념</a></li>
+                  <li><a href="">회사연혁</a></li>
+                  <li><a href="">CI</a></li>
+                  <li><a href="">조직도</a></li>
+                  <li><a href="">오시는 길</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="">Business</a>
+                <ul class="depth02">
+                  <li><a href="">경관용포장재</a></li>
+                  <li><a href="">기능성포장재</a></li>
+                  <li><a href="">조립식바닥재</a></li>
+                  <li><a href="">스포츠필드</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="">Pr</a>
+                <ul class="depth02">
+                  <li><a href="">특허인증</a></li>
+                  <li><a href="">시공실적</a></li>
+                  <li><a href="">시공사진</a></li>
+                  <li><a href="">카달로그</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="">Costomer</a>
+                <ul class="depth02">
+                  <li><a href="notice.html">공지사항</a></li>
+                  <li><a href="">나라장터 등록물품</a></li>
+                  <li><a href="inquiry.html">견적문의</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="">Recruit</a>
+                <ul class="depth02">
+                  <li><a href="">인재상</a></li>
+                  <li><a href="">인사&amp;복지</a></li>
+                  <li><a href="">채용공고</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="etc">
+            <a href="" class="btn_online">온라인 견적문의</a>
+            <a href="" id="allNav"><span></span><span></span><span></span></a>
+          </div>
+        </div>
+      </header>
+      <div id="container">
+        <div id="mainVisual">
+          <ul class="swiper-wrapper">
+            <li class="visual01 swiper-slide"></li>
+            <li class="visual02 swiper-slide"></li>
+            <li class="visual03 swiper-slide"></li>
+          </ul>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev swiper-button"></div>
+          <div class="swiper-button-next swiper-button"></div>
+          <div class="slogan">
+            <p class="main">High Technology TOP Peoples</p>
+            <p class="sub">
+              아름답고 쾌적한 길거리, 안전하고 차별화 된 공간을 원하십니까?<br />
+              최고의 기술을 가진 최상의 조직! 자연을 닮은 제품을 제공하는 하이탑입니다.
+            </p>
+          </div>
+          <div class="iconScroll">
+            <span class="icon"></span>
+            <span class="txt">scroll</span>
+          </div>
+        </div>
+        <div id="mainContents">
+          <div class="section01 inner">
+            <h2 class="blind">quick menu</h2>
+            <ul>
+              <li>
+                <a href="">
+                  <img src="../images/main/mainLink01.jpg" alt="" /><span
+                    >최고의 조직, 최상의 조직<b>ABOUT <br />COMPANY</b></span
+                  >
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="../images/main/mainLink02.jpg" alt="" /><span>하이탑이 꿈꾸는 세상<b>DOWNLOAD CATALOG</b></span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="../images/main/mainLink03.jpg" alt="" />
+                  <span>
+                    변화를 주도하는 하이탑인<b>RECRUIT <br />HITOP PEOPLE</b>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="section02">
+            <div class="inner">
+              <h2>BUSINESS</h2>
+              <p class="title">하이탑이 디자인에서 설계, 시공까지 확실하게 책임지겠습니다.</p>
+              <ul>
+                <li>
+                  <a href="">
+                    <img src="../images/main/businessField01.jpg" alt="" />
+                    <div class="txtBox"><b>경관용 포장재</b>아트크리트, 텍스크리트, 패턴크리트, 흙콘크리트, 실코트</div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="../images/main/businessField02.jpg" alt="" />
+                    <div class="txtBox"><b>기능성 포장재</b>아트크리트, 텍스크리트, 패턴크리트, 흙콘크리트, 실코트</div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="../images/main/businessField03.jpg" alt="" />
+                    <div class="txtBox"><b>조립식 바닥재</b>아트크리트, 텍스크리트, 패턴크리트, 흙콘크리트, 실코트</div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="../images/main/businessField04.jpg" alt="" />
+                    <div class="txtBox"><b>스포츠 필드</b>아트크리트, 텍스크리트, 패턴크리트, 흙콘크리트, 실코트</div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="section03 inner">
+            <h2>NEWS</h2>
+            <p class="title">도시경관사업의 시장을 선도하는 하이탑의다양한 소식을 전해드립니다.</p>
+            <ul>
+              <li>
+                <a href="">
+                  <img src="../images/main/news01.jpg" alt="" />
+                  <div>
+                    <span class="title">타이틀입니다</span>
+                    <span class="txt">
+                      국회가 재적의원 과반수의 찬성으로 계엄의 해제를 요구한 때에는 대통령은 이를 해제하여야 한다. 국가는 농지에 관하여 경자유전의 원칙이 달성될 수 있도록 노력하여야 하며, 농지의
+                      소작제도는 금지된다.
+                    </span>
+                    <span class="date">2022-01-01</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="../images/main/news02.jpg" alt="" />
+                  <div>
+                    <span class="title">타이틀입니다</span>
+                    <span class="txt">
+                      국회가 재적의원 과반수의 찬성으로 계엄의 해제를 요구한 때에는 대통령은 이를 해제하여야 한다. 국가는 농지에 관하여 경자유전의 원칙이 달성될 수 있도록 노력하여야 하며, 농지의
+                      소작제도는 금지된다.
+                    </span>
+                    <span class="date">2022-01-01</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="../images/main/news03.jpg" alt="" />
+                  <div>
+                    <span class="title">타이틀입니다</span>
+                    <span class="txt">
+                      국회가 재적의원 과반수의 찬성으로 계엄의 해제를 요구한 때에는 대통령은 이를 해제하여야 한다. 국가는 농지에 관하여 경자유전의 원칙이 달성될 수 있도록 노력하여야 하며, 농지의
+                      소작제도는 금지된다.
+                    </span>
+                    <span class="date">2022-01-01</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="section04">
+            <h2>CUSTOMER CENTER</h2>
+            <p class="title">
+              하이탑의 포장기법은 지역적, 환경적 특성을 고려한 디자인으로<br />
+              고객이 원하는 모든 곳을 새로운 문화, 새로운 랜드마크로 만들어드립니다.
+            </p>
+            <a href="" class="btn_customer">견전문의 바로가기</a>
+          </div>
+        </div>
+      </div>
+      <footer id="footer">
+        <div class="inner">
+          <div class="footerLink"><a href="">이용약관</a><a href="">개인정보처리방침</a><a href="">사이트맵</a><a href="">온라인견적문의</a></div>
+          <div class="footerBox">
+            <div class="footerLogo"><img src="../images/layout/fLogo.png" alt="" /></div>
+            <div class="address">
+              <p>주소 : 서울 송파구 성내천로 14길 13 (3층) <br />대표전화 : 070-7715-4400 / 이메일 : hitop4400@hanmail.net <br />사업자번호 : 402-81-83259</p>
+              <p>Copyright ⓒ 2018 HITOP. All rights reserved</p>
+            </div>
+            <div class="customerCenter">
+              고객만족센터
+              <b>070-7715-4400</b>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <button class="btn_top">↑<span class="blind">위로</span></button>
+  </body>
+</html>

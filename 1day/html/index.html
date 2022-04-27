@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIMAN &#129392;</title>
+    <script src="../js/biman.js" defer></script>
+    <link rel="stylesheet" href="../css/biman.css">
+</head>
+<body>
+    <h2>체질량지수(BMI)</h2>
+    <div class="biman">
+        <label><span>키</span><input type="text" placeholder="키를 입력하세요. ex) 180" value="" id="height"></label>
+        <label><span>몸무게</span><input type="text" placeholder="몸무게를 입력하세요. ex) 80" value="" id="weight"></label>
+        <button id="btnResult">결과보기</button>
+        <div id="txtResult">
+            <span class="txt" id="txtResultText">정상입니다</span>
+            <span class="num" id="txtResultNum">21.4</span>
+            <button id="btnReset">다시하기</button>
+        </div>
+    </div>
+    <div class="img"><img src="https://placeimg.com/640/480/people"></div>
+</body>
+</html>

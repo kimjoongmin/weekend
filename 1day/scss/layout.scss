@@ -1,0 +1,27 @@
+$hover1:#ff0000;
+*{padding:0;margin:0;}
+header {
+    background:#000;
+    color:#fff;
+    #logo{
+        font-size:24px;
+    }
+    nav{
+        ul{
+            display:flex;
+            justify-content: space-around;
+            li{
+                display:block;
+                a{
+                    display:block;
+                    color:#fff;
+                    text-decoration:none;
+                    line-height:50px;
+                    &:hover{
+                        color:$hover1;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&#128525; 가위바위보</title>
+    <link rel="stylesheet" href="./css/layout.css">
+    <script src="./js/rockpaperscissors.js" defer></script>
+</head>
+<body>
+    <h2>ROCK PAPER SCISSORS GO!!!</h2>
+    <div id="computer">
+        <ul>
+            <li><img src="./images/rock.svg" alt="rock"></li>
+            <li><img src="./images/paper.svg" alt="paper"></li>
+            <li><img src="./images/scissors.svg" alt="scissors"></li>
+        </ul>
+    </div>
+    <div id="user">
+        <ul>
+            <li data-id="0"><a href="#"><img src="./images/rock.svg" alt="rock"></a></li>
+            <li data-id="1"><a href="#"><img src="./images/paper.svg" alt="paper"></a></li>
+            <li data-id="2"><a href="#"><img src="./images/scissors.svg" alt="scissors"></a></li>
+        </ul>
+    </div>
+    <div id="resultList">
+        <!-- <div class="win"><span>W</span></div>
+        <div class="lose"><span>L</span></div>
+        <div class="draw"><span>D</span></div> -->
+    </div>
+    <div id="resultCover">
+        <div id="winner"><img src="./images/winner.svg" alt="승리"></div>
+        <div id="over"><img src="./images/over.svg" alt="패배"></div>
+        <h3>한게임 더?</h3>
+        <button id="btnRestart">RESTART GAME</button>
+    </div>
+</body>
+</html>

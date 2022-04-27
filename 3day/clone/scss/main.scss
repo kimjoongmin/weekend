@@ -1,0 +1,304 @@
+#mainVisual {
+  overflow: hidden;
+  position: relative;
+  ul {
+    li {
+      height: 100vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50%;
+      &.visual01 {
+        background-image: url("../images/main/mainVisual01.jpg");
+      }
+      &.visual02 {
+        background-image: url("../images/main/mainVisual02.jpg");
+      }
+      &.visual03 {
+        background-image: url("../images/main/mainVisual03.jpg");
+      }
+    }
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 80px;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    &:after {
+      font-size: 30px;
+    }
+  }
+  .slogan {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 4;
+    color: #fff;
+    .main {
+      font-size: 55px;
+      font-weight: 700;
+      margin-bottom: 50px;
+      span {
+        display: inline-block;
+      }
+    }
+    .sub {
+      font-size: 18px;
+    }
+  }
+  .swiper-pagination {
+    bottom: 250px;
+    z-index: 3;
+    .swiper-pagination-bullet {
+      width: 20px;
+      height: 20px;
+      border: 2px solid #fff;
+      background: transparent;
+      transition: all 0.5s ease;
+    }
+    .swiper-pagination-bullet-active {
+      width: 100px;
+      border-radius: 100px;
+      background: rgba(0, 0, 0, 0.3);
+    }
+  }
+  .iconScroll {
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    transform: translate(-50%, -50%);
+    bottom: 50px;
+    z-index: 3;
+    .icon {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      width: 20px;
+      height: 35px;
+      border: 2px solid #fff;
+      border-radius: 100px;
+      margin: 0 auto;
+      &:after {
+        content: "";
+        width: 2px;
+        height: 7px;
+        margin-top: 9px;
+        background: #fff;
+        animation: iconScroll 1s infinite alternate;
+      }
+    }
+    .txt {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+  }
+}
+#mainContents > div {
+  padding: 100px 0;
+  h2 {
+    font-size: 36px;
+    text-align: center;
+  }
+  p.title {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+}
+.section01 {
+  ul {
+    display: flex;
+    justify-content: center;
+    li {
+      a {
+        position: relative;
+        display: block;
+        &:after {
+          display: block;
+          content: "";
+          position: absolute;
+          left: 20px;
+          right: 20px;
+          top: 20px;
+          bottom: 20px;
+          border: 1px solid #fff;
+        }
+        span {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          padding: 40px;
+          color: #fff;
+          b {
+            display: block;
+            font-size: 32px;
+            line-height: 30px;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+.section02 {
+  background: url(../images/main/bgBusiness.jpg) 0 0 no-repeat;
+  background-size: cover;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    li {
+      overflow: hidden;
+      margin-bottom: 20px;
+      &:hover img {
+        transform: scale(1.2);
+        filter: grayscale(0%);
+      }
+      a {
+        position: relative;
+        display: block;
+        img {
+          transition: all 0.5s ease;
+          filter: grayscale(100%);
+        }
+        .txtBox {
+          position: absolute;
+          left: 40px;
+          bottom: 40px;
+          color: #fff;
+          b {
+            display: block;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+.section03 {
+  ul {
+    display: flex;
+    justify-content: space-between;
+    li {
+      width: 390px;
+      box-sizing: border-box;
+      border: 1px solid #ddd;
+      transition: all 0.25s ease;
+      a {
+        display: block;
+        > div {
+          padding: 20px;
+        }
+        .title {
+          display: block;
+          font-size: 24px;
+        }
+        .txt {
+          display: block;
+          margin: 20px 0;
+        }
+        .date {
+          color: #767676;
+        }
+        img {
+          width: 100%;
+          height: 350px;
+        }
+      }
+      &:hover {
+        transform: translateY(-10px);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}
+.section04 {
+  background: url(../images/main/bgCustomer.jpg) center center no-repeat;
+  background-size: cover;
+  color: #fff;
+  h2 {
+    position: relative;
+    &:after {
+      display: block;
+      content: "";
+      margin: 33px auto;
+      width: 30px;
+      height: 2px;
+      background: #fff;
+    }
+  }
+  .btn_customer {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 100px;
+    color: #fff;
+    background: #bf0c14;
+  }
+}
+footer {
+  position: relative;
+  background: #333;
+  color: #fff;
+  &:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #fff;
+  }
+  .footerLink {
+    display: flex;
+    justify-content: center;
+    a {
+      display: flex;
+      position: relative;
+      color: #fff;
+      padding: 30px;
+      &:after {
+        display: block;
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1px;
+        height: 10px;
+        background: #fff;
+      }
+      &:last-child:after {
+        display: none;
+      }
+    }
+  }
+  .footerBox {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    .address p + p {
+      margin-top: 30px;
+    }
+    .customerCenter {
+      b {
+        display: block;
+        margin-top: 10px;
+        font-size: 40px;
+      }
+    }
+  }
+}
+@keyframes iconScroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}

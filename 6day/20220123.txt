@@ -1,0 +1,37 @@
+https://masonry.desandro.com/
+
+https://isotope.metafizzy.co/
+
+*이미지가 싹다 로딩이 됐는지 확인할 수 있음
+https://imagesloaded.desandro.com/
+
+*클릭했을때 크게~ API
+https://fancyapps.com/
+
+
+*스크롤 액션 라이브러리
+aos
+https://michalsnik.github.io/aos/
+
+
+scrollmagic
+https://scrollmagic.io/
+
+
+typing
+https://mattboldt.com/
+
+
+
+cookie
+https://github.com/js-cookie/js-cookie
+
+
+포트폴리오
+naminsik.com
+
+
+https://github.com/jjang051/portfolio
+
+
+https://github.com/redpeach051

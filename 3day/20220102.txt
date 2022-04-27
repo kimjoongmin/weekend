@@ -1,0 +1,63 @@
+
+*카피 홈페이지
+gnb
+swiper
+오늘하루...팝업
+지도 api
+github.com/redpeach051/hitop
+
+barba.js 페이지 이동시 효과
+
+*swiper
+https://swiperjs.com/
+
+*소스 정리
+Prettier - Code format
+
+.prettierrc 생성
+{
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": false,
+    "trailingComma": "all",
+    "printWidth": 200,
+    "endOfLine": "auto"
+}
+
+.prettierignore //무시
+*.css //css 파일은 무시
+
+
+*애니메이션js
+https://greensock.com/
+https://animejs.com/
+lottiejs
+
+
+*(apm)
+http://autoset.net/xe/
+서버셋팅해서 php include
+<? include(../include/heade.html); ?>
+
+
+선생님 깃헙
+https://jjang051.github.io/portfolio/html/
+
+
+*굴자쪼개기 애니메이션
+https://splitting.js.org/
+
+
+jQuery 쓰는 큰 이유
+1. DOM select
+2.
+3. ajax (fetch,axios)
+4. cross Browsing
+
+
+*강의
+https://www.udemy.com/course/winterlood-react-basic/
+
+
+*아이콘~
+https://www.flaticon.com/
